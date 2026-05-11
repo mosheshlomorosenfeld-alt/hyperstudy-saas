@@ -1,8 +1,14 @@
 // supabase-config.js
-const SUPABASE_URL = 'https://your-project-id.supabase.co';
-const SUPABASE_ANON_KEY = 'your-anon-public-key-here';
+// =============================================
+// HyperStudy - Supabase Configuration
+// Replace with your real credentials when ready
+// =============================================
 
-export const supabase = Supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const SUPABASE_URL = 'https://YOUR_PROJECT_ID.supabase.co';
+const SUPABASE_ANON_KEY = 'YOUR_ANON_PUBLIC_KEY_HERE';
 
-// Example usage in app.html:
-// await supabase.auth.signInWithPassword({ email, password });
+// For development/demo only
+export const supabase = window.Supabase ? 
+  window.Supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
+
+console.log("%cSupabase config loaded - Ready for real authentication", "color: #eab308");
