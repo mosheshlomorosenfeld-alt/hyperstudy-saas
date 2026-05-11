@@ -1,5 +1,4 @@
 # HyperStudy SaaS
-
 **The most powerful study platform for people with ADHD, ADD, and Dyslexia.**
 
 ### Features
